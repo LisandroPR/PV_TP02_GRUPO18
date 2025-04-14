@@ -5,7 +5,7 @@ function crear_arreglo(){
     let a = document.getElementById("numero_a").value;
     let b = document.getElementById("numero_b").value
 
-    if(a==="" || b==="" ){  //verifica que haya numeros en los imput
+    if(a==="" || b==="" ){  //verifica que haya numeros en los imputt
         alert("Agrega numeros en cada input");
     }
     else{

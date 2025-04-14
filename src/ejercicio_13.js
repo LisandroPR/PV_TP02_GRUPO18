@@ -10,7 +10,7 @@ function mostrarArreglo(numeros){
     for(let i = 0; i < numeros.length;i++){
         let p =document.createElement("p"); // crea el elemento p
         p.textContent = numeros[i]; //pone el valor actual del arreglo al p
-        datos.appendChild(p); //agrega p al div y se muestra
+        datos.appendChild(p); //agrega p al div y se muestra.
     
     }
 }

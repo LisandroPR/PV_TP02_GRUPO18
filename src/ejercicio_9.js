@@ -5,7 +5,7 @@ function mostrar_msj(){
     // trae el nombre de usuario y lo asigna a una variable
     let nombre = document.getElementById("nombre_usuario").value;
 
-    if (nombre===""){   // valida que se ponga una cadena
+    if (nombre===""){   // valida que se ponga una cadenaa
         alert("Tiene que poner un nombre");
     }
     else{
