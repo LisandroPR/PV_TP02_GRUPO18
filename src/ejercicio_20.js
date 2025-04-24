@@ -1,4 +1,4 @@
-import { paisCapital } from "../src/moduloejercicio20.js";
+import { paisCapital } from "./moduloejercicio20.js";
 
 const seleccionPais= document.getElementById("pais");
 const seleccionCapital= document.getElementById("capital");
