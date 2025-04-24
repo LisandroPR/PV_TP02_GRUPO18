@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Superclásico</title>
-    <link rel="stylesheet" href="/PV_TP02_GRUPO18/assets/css/ejercicio_23.css">
+    <title>Elección de Partido</title>
+    <link rel="stylesheet" href="/assets/css/ejercicio_23.css">
 </head>
 <body>
-    <section class="contenedor">
-    <h1>¿Que equipo gana el domingo?</h1>
-    
-    <form id="formLenguajes">
-    <label><input type="radio" name="equipo" value="Boca Juniors"> Boca Juniors</label><br>
-    <label><input type="radio" name="equipo" value="River Plate"> River Plate</label><br>
-    <label><input type="radio" name="equipo" value="Empatan"> Empatan</label><br>
-    </form>
 
-    <p id="resultado">Elige uno.</p>
-    </section>
+    <div class="opciones">
+        <h1>¿Quien gana el superclasico?</h1>
 
-    <script src="/PV_TP02_GRUPO18/src/ejercicio_23.js"></script>
+        <label><input type="radio" name="equipo" value="Boca Juniors"> Boca Juniors</label><br>
+        <label><input type="radio" name="equipo" value="River Plate"> River Plate</label><br>
+        <label><input type="radio" name="equipo" value="Empate"> Empate</label>
+
+    <p id="resultado">Selecciona una opción</p>
+</div>
+    <script type="module" src="/src/ejercicio_23.js"></script>
 </body>
 </html>
