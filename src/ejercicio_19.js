@@ -4,12 +4,6 @@
 // Apellido: Diaz 
 // Libreta Universitaria: APU999999
 
-const mostrarDatos= () => {
-    const nombre = document.querySelector("#nombre").value
-    const apellido = document.querySelector("#apellido").value
-    const libreta = document.querySelector("#LU").value
+import { mostrarDatos } from './funcion_19.js';
 
-    alert(`Nombre: ${nombre}\nApellido: ${apellido}\nLibreta Universitaria: ${libreta}`);
-
-}
-
+document.querySelector("#btnMostrar").addEventListener("click", mostrarDatos);
