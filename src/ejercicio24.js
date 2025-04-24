@@ -1,8 +1,10 @@
-const colors = ["#ff5733", "#33ff57", "#3357ff", "#ff33a1", "#a133ff", "#33ffa1"];
-const button = document.getElementById("colorButton");
+import { coloresSuaves } from "/PV_TP02_GRUPO18/src/moduloejercicio24.js";
 
-button.addEventListener("click", () => {
-    const randomColor = colors[Math.floor(Math.random() * colors.length)];
-    document.body.style.backgroundColor = randomColor;
-    console.log(`El color de fondo ha cambiado a: ${randomColor}`);
-});
+function cambiarColor() {
+    const colorAleatorio = coloresSuaves[Math.floor(Math.random() * coloresSuaves.length)];
+    document.body.style.backgroundColor = colorAleatorio;
+    console.log(`Color de fondo cambiado a: ${colorAleatorio}`);
+}
+
+// Agrega el evento al botón
+document.getElementById("nuevoColorBtn").addEventListener("click", cambiarColor);

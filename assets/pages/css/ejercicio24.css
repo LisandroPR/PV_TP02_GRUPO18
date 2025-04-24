@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.4s ease, color 0.4s ease;
+    margin: 0;
+    padding: 0;
+    color: #2c3e50;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #1abc9c;
+    background-color: #1abc9c;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #16a085;
+    border-color: #16a085;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}

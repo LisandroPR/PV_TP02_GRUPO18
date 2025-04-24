@@ -4,45 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Países y Capitales</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        html {
-            background: linear-gradient(135deg, #0077b6, #90e0ef);
-            font-family: "Montserrat", sans-serif;
-            font-weight: 400;
-            color: white;
-            text-align: center;
-        }
-        h1 {
-            font-size: 28px;
-            margin-bottom: 30px;
-        }
-        label {
-            font-size: 18px;
-            margin: 10px;
-            border-radius: 5px;
-            padding: 10px;
-            display: block;
-        }
-        select {
-            background-color: white;
-            color: black;
-            font-size: 16px;
-            width: 40%;
-            padding: 8px;
-            border-radius: 5px;
-            border: none;
-            margin-bottom: 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="/PV_TP02_GRUPO18/assets/pages/css/ejercicio20.css">
 </head>
 <body>
     <h1>Países y Capitales de América</h1>
     
     <label for="pais">Selecciona un país:</label>
-    <select id="pais" onchange="actualizarCapital()">
+    <select name="pais" id="pais" >
         <option value="">-- Selecciona un país --</option>
         <option value="Argentina">Argentina</option>
         <option value="Brasil">Brasil</option>
@@ -53,10 +21,10 @@
     </select>
 
     <label for="capital">Capital:</label>
-    <select id="capital">
+    <select name="capital" id="capital" disabled>
         <option value="">-- Selecciona una capital --</option>
     </select>
 
-    <script src="/PV_TP02_GRUPO18/src/ejercicio20.js"></script>
+    <script type="module" src="/PV_TP02_GRUPO18/src/ejercicio20.js"></script>
 </body>
 </html>

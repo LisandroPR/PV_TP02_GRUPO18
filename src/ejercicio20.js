@@ -1,29 +1,23 @@
-function actualizarCapital() {
-    const paisSeleccionado = document.getElementById("pais").value;
-    const capitalSelect = document.getElementById("capital");
+import { paisCapital } from "../src/moduloejercicio20.js";
 
-    const capitales = {
-        "Argentina": "Buenos Aires",
-        "Brasil": "Brasilia",
-        "Chile": "Santiago",
-        "Colombia": "Bogotá",
-        "México": "Ciudad de México",
-        "Perú": "Lima"
-    };
-    capitalSelect.innerHTML = "";
+const seleccionPais= document.getElementById("pais");
+const seleccionCapital= document.getElementById("capital");
 
-    if (paisSeleccionado) {
-        const nuevaOpcion = document.createElement("option");
-        nuevaOpcion.value = capitales[paisSeleccionado];
-        nuevaOpcion.textContent = capitales[paisSeleccionado];
-        capitalSelect.appendChild(nuevaOpcion);
-        capitalSelect.value = capitales[paisSeleccionado];
-        console.log(`País seleccionado: ${paisSeleccionado}`);
-        console.log(`Capital correspondiente: ${capitales[paisSeleccionado]}`);
-    } else {
-        const defaultOption = document.createElement("option");
-        defaultOption.value = "";
-        defaultOption.textContent = "-- Selecciona una capital --";
-        capitalSelect.appendChild(defaultOption);
+seleccionPais.addEventListener("change",()=>{
+    
+    const paisSeleccionado = seleccionPais.value;
+
+    if(paisSeleccionado && paisCapital[paisSeleccionado]){
+        const capital = paisCapital[paisSeleccionado];
+        seleccionCapital.disabled=false;
+        seleccionCapital.innerHTML=`<option value="${capital}">${capital}</option>`;
+        console.log(`Pais seleccionado: ${paisSeleccionado}`);
+        console.log(`Su capital es: ${capital}`);
+
+    }else{
+    seleccionCapital.disabled = true;
+    seleccionCapital.innerHTML=`<option value="">Seleccionar una capital</option>`;
+
     }
-}
+
+});
