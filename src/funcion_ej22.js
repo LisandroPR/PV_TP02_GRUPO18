@@ -7,4 +7,5 @@ export default function tiempo_real() {
     else{
         salida.style.backgroundColor = "rgb(117, 117, 117";
     }
+    
 }

@@ -7,4 +7,5 @@ const salida = document.getElementById("salida");
 entrada.addEventListener( "input", () => {  //evento listener de input
 
    tiempo_real();
+   
 })
