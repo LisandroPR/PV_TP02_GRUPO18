@@ -5,5 +5,4 @@ export default function cambiarp (){        //exportamos la unica funcion
     //parrafo.appendChild(parrafo);
 
     alert("Se ha cambiado el parrafo");
-    
 }
